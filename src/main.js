@@ -20,6 +20,7 @@ async function fetchPokemon(id) {
     console.error("Error fetching Pokémon:", error.message);
   }
 }
+//AI fixed this part as I wrote the sprites wrong, forgot the _ in front_default even though I thought that you are suppose to leave a space. I didn't remember learning about the .alt.
 function renderPokemon(data) {
   pokemonImage.src = data.sprites.front_default;
   pokemonImage.alt = `${data.name} sprite`;
